@@ -8,3 +8,30 @@
   z-index: 1;
   width: 200px;
 }
+
+.landing-title {
+  padding-top: 200px;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.landing {
+  background: image-url("blurred.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.btn-landing {
+  background: none;
+  border: solid;
+}
+
+.btn-landing:hover {
+  background: none;
+  border-color: white;
+}

@@ -14,10 +14,18 @@
       <%= message %>
     </div>
   <% end %>
-  <div class="container">
-    <%= yield %>
-  </div>
+  <% if current_page?(root_path) %>
+    <div class="landing">
+      <div class="text-center landing-title">
+        <%= link_to "Find places you'll fall in love with", places_path, class: "btn btn-default btn-lg btn-landing" %>
+      </div>
+    </div>
+  <% else %>
+    <div class="container">
 
+    <%= yield %>
+    </div>
+  <% end %>
 
 <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC01_UHTone5yZrB9SrCSc1adS6nPAdJE&callback=initMap">
